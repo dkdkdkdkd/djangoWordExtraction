@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show</title>
+</head>
+<body>
+    <h2>
+        show page
+    </h2>
+
+    <hr/>
+
+    <h3>
+        <a href="/show/">ReNew</a>
+    </h3>
+
+    <h4>
+        <ul>
+            {%for word in worddb_list %}
+                <li>{{word.eng}} : {{word.kor}}</li>
+            {% endfor %}
+        </ul>
+    </h4>
+
+    <hr/>
+    <h5><a href="/">Home</a></h5>
+</body>
+</html>
